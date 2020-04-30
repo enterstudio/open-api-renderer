@@ -54,7 +54,9 @@
     "test:bench": "node -r babel-register test/benchmark/parser.js",
     "test:coverage": "jest --coverage",
     "version": "version-changelog CHANGELOG.md && changelog-verify CHANGELOG.md && git add CHANGELOG.md",
-    "webpack:library": "rimraf dist/library/* && NODE_ENV=production webpack --config webpack.config.library.js"
+    "webpack:library": "rimraf dist/library/* && NODE_ENV=production webpack --config webpack.config.library.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "classnames": "^2.2.5",
@@ -71,7 +73,8 @@
     "qs": "^6.4.0",
     "react-document-title": "^2.0.2",
     "react-jss": "^6.1.1",
-    "react-scrollable-anchor": "^0.5.0"
+    "react-scrollable-anchor": "^0.5.0",
+    "snyk": "^1.316.1"
   },
   "peerDependencies": {
     "react": "^15.5.4",
@@ -123,5 +126,6 @@
     "webpack-dashboard": "^0.4.0",
     "webpack-dev-server": "^2.4.2",
     "webpack-merge": "^4.1.0"
-  }
+  },
+  "snyk": true
 }
