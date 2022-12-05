@@ -68,7 +68,7 @@
     "lodash": "^4.17.4",
     "markdown-it": "^8.3.1",
     "prop-types": "^15.5.8",
-    "qs": "^6.4.0",
+    "qs": "^6.5.3",
     "react-document-title": "^2.0.2",
     "react-jss": "^6.1.1",
     "react-scrollable-anchor": "^0.5.0"
